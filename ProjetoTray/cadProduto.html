@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Celular</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/cadProduto.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .container {
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container" id="nav-container">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <a href="#" class="navbar-brand">
+                <img id="logo" src="./assets/img/logo.png" alt="VSMR Soluctions">VSMR Soluctions
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" 
+            aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation"> 
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+                <div class="navbar-nav">
+                  <a class="nav-item nav-link" href="historicoProdutos.html"><b>Historico de Produtos</b></a>
+                    <a class="nav-item nav-link" href="index.html"><b>Voltar para tela inicial</b></a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          Cadastro de Celular
+        </div>
+        <div class="card-body">
+          <form id="cadastroForm">
+            <div class="form-group">
+              <label for="marca">Marca:</label>
+              <input type="text" class="form-control" id="marca" placeholder="Digite a marca do celular">
+              <span id="marcaError" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+              <label for="modelo">Modelo:</label>
+              <input type="text" class="form-control" id="modelo" placeholder="Digite o modelo do celular">
+              <span id="modeloError" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+              <label for="cor">Cor:</label>
+              <input type="text" class="form-control" id="cor" placeholder="Digite a cor do celular">
+              <span id="corError" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+              <label for="preco">Preço:</label>
+              <input type="text" class="form-control" id="preco" placeholder="Digite o preço do celular">
+              <span id="precoError" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+              <label for="descricao">Descrição:</label>
+              <textarea class="form-control" id="descricao" rows="3" placeholder="Digite a descrição do celular"></textarea>
+              <span id="descricaoError" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+              <label for="foto">Foto do Produto:</label>
+              <input type="file" class="form-control-file" id="foto">
+              <span id="fotoError" class="text-danger"></span>
+            </div>
+            <button type="button" class="btn btn-primary" id="cadastrarBtn">Cadastrar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
